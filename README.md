@@ -1,0 +1,1 @@
+In order to use this repository one has to create a folder Original with original pictures in it and a ground_truth.txt file. Pictures should be named "File_*it's order*" and follow the same order as the corresponding string lists in the txt file. 
