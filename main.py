@@ -67,9 +67,9 @@ def add_column_to_csv(new_column):
         with open(file_name, 'w', newline='') as file:
             writer = csv.writer(file)
             writer.writerows(data)
-        print(f"Новый столбец успешно добавлен в файл {file_name}.")
+        print(f"новый столбец успешно добавлен в файл")
     else:
-        print("Количество строк в CSV не соответствует количеству элементов нового столбца.")
+        print("количество строк в CSV не соответствует количеству элементов нового столбца")
 
 def create_pivot_table(full_list_gt):
     type = ['Original', 'Contrast', 'FFA-Net']
@@ -144,8 +144,3 @@ create_pivot_table(full_list_gt)
 # show_hist()
 # таблица с мат ожиданиями
 create_final_table()
-
-
-
-
-
