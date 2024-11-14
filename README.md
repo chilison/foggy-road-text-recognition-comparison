@@ -11,8 +11,8 @@ Example of the dataset and the ground truth file can be found [here](https://dri
 python main.py
 ~~~
 
-## Acknoledgements
+## Acknowledgements
 
-Thanks, [FSNet](https://github.com/c-yn/FSNet/tree/main)!
+Thanks, [FSNet](https://github.com/c-yn/FSNet/tree/main) and [Jeru Luke](https://stackoverflow.com/questions/39308030/how-do-i-increase-the-contrast-of-an-image-in-python-opencv)!
 
 

@@ -5,6 +5,14 @@ import table_creating
 
 
 def show_hist():
+    """
+    Presents 6 histograms of calculation results.
+
+    Args:
+
+    Returns:
+    
+    """
     with open('pivot_table_metrics.csv', 'r', newline='') as file:
         reader = csv.reader(file)
         data = list(reader)
@@ -26,7 +34,7 @@ with open('ground_truth.txt', 'r') as file:
         full_list_gt.append(current_list)
 
 # the number of pics is equal to the number of string lists since there is no reason to process images without ground truth data
-# image_processing.process_images('original', len(full_list_gt))
+image_processing.process_images('original', len(full_list_gt))
 # this function creates a pivot table of metrics for all parameter combinations
 table_creating.create_pivot_table(full_list_gt)
 # show_hist()

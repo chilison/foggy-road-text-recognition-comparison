@@ -5,6 +5,13 @@ import os
 
 
 def enhance_contrast(directory, num_of_pics):
+    """
+    Enhances contrast of pics from the currently processed directory. 
+
+    Args:
+        directory (string): name of the currently processed directory.
+        num_of_pics (int): number of pics.
+    """
     for i in range(1, num_of_pics + 1, 1):
         img = cv2.imread(directory + '/File' + str(i) + '.png', 1)
         lab = cv2.cvtColor(img, cv2.COLOR_BGR2LAB)
@@ -18,6 +25,13 @@ def enhance_contrast(directory, num_of_pics):
 
 
 def fsnet(directory):
+    """
+    Enhances contrast of pics from the currently processed directory. 
+
+    Args:
+        directory (string): name of the currently processed directory.
+        num_of_pics (int): number of pics.
+    """
     fsnet_main_path = os.path.join('libs', 'FSNet', 'Dehazing', 'OTS', 'main.py')
     os.makedirs('reside-outdoor/test/gt', exist_ok=True)
     os.makedirs('reside-outdoor/test/hazy', exist_ok=True)
@@ -39,5 +53,12 @@ def fsnet(directory):
 
 
 def process_images(directory, num_of_pics):
+    """
+    Invokes functions for image processing. 
+
+    Args:
+        directory (string): name of the currently processed directory.
+        num_of_pics (int): number of pics.
+    """
     enhance_contrast(directory, num_of_pics)
     fsnet(directory)
