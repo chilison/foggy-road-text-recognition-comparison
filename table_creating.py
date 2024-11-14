@@ -5,7 +5,7 @@ import metrics_computation
 
 def create_csv_with_first_column(first_column):
     """
-    Сreates .csv file with the first column. 
+    Сreates .csv file with the first column.
 
     Args:
         first_column (list[float]): first column to be added to the table, by default is original ru+eng.
@@ -20,7 +20,7 @@ def create_csv_with_first_column(first_column):
 
 def add_column_to_csv(new_column):
     """
-    Adds columns (apart from the first one) to the already existing .csv file. 
+    Adds columns (apart from the first one) to the already existing .csv file.
 
     Args:
         new_column (list[float]): new column to be added to the table.
@@ -42,7 +42,7 @@ def add_column_to_csv(new_column):
 
 def create_pivot_table(full_list_gt):
     """
-    Invokes functions for creating and filling a pivot table. 
+    Invokes functions for creating and filling a pivot table.
 
     Args:
         full_list_gt (list[list[string]]): list of string list of ground truth which you prepare yourself.
@@ -60,7 +60,7 @@ def create_pivot_table(full_list_gt):
 
 def create_final_table():
     """
-    Creates a final table of expected values with standard deviation. 
+    Creates a final table of expected values with standard deviation.
     """
     with open('final_table.csv', 'w', newline='') as file:
         writer = csv.writer(file)

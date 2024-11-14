@@ -2,16 +2,12 @@ import ast
 import matplotlib.pyplot as plt
 import csv
 import table_creating
+import image_processing
 
 
 def show_hist():
     """
     Presents 6 histograms of calculation results.
-
-    Args:
-
-    Returns:
-    
     """
     with open('pivot_table_metrics.csv', 'r', newline='') as file:
         reader = csv.reader(file)

@@ -6,7 +6,7 @@ import os
 
 def enhance_contrast(directory, num_of_pics):
     """
-    Enhances contrast of pics from the currently processed directory. 
+    Enhances contrast of pics from the currently processed directory.
 
     Args:
         directory (string): name of the currently processed directory.
@@ -26,7 +26,7 @@ def enhance_contrast(directory, num_of_pics):
 
 def fsnet(directory):
     """
-    Enhances contrast of pics from the currently processed directory. 
+    Enhances contrast of pics from the currently processed directory.
 
     Args:
         directory (string): name of the currently processed directory.
@@ -54,7 +54,7 @@ def fsnet(directory):
 
 def process_images(directory, num_of_pics):
     """
-    Invokes functions for image processing. 
+    Invokes functions for image processing.
 
     Args:
         directory (string): name of the currently processed directory.
